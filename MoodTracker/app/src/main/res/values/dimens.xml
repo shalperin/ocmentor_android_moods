@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="note_button_margin_left">12dp</dimen>
+</resources>

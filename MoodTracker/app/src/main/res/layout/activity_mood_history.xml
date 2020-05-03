@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivityMoodHistory"
+    android:orientation="vertical"
+    android:id="@+id/root_container">
+
+    <FrameLayout
+        android:id="@+id/progress_day_7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".142857">
+
+        <include layout="@layout/include_progress_sad" />
+        <include layout="@layout/include_progress_disappointed" />
+        <include layout="@layout/include_progress_normal"/>
+        <include layout="@layout/include_progress_happy" />
+        <include layout="@layout/include_progress_super_happy" />
+
+        <ImageView
+            android:id="@+id/notes_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_note_black_24dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/note_button_margin_left"
+            android:visibility="gone"
+            />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One week ago."/>
+</FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/progress_day_6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".142857">
+
+        <include layout="@layout/include_progress_sad" />
+        <include layout="@layout/include_progress_disappointed" />
+        <include layout="@layout/include_progress_normal"/>
+        <include layout="@layout/include_progress_happy" />
+        <include layout="@layout/include_progress_super_happy" />
+
+        <ImageView
+            android:id="@+id/notes_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_note_black_24dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/note_button_margin_left"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Six days ago."/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/progress_day_5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".142857">
+
+        <include layout="@layout/include_progress_sad" />
+        <include layout="@layout/include_progress_disappointed" />
+        <include layout="@layout/include_progress_normal"/>
+        <include layout="@layout/include_progress_happy" />
+        <include layout="@layout/include_progress_super_happy" />
+
+        <ImageView
+            android:id="@+id/notes_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_note_black_24dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/note_button_margin_left"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Five days ago."/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/progress_day_4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".142857">
+        <include layout="@layout/include_progress_sad" />
+        <include layout="@layout/include_progress_disappointed" />
+        <include layout="@layout/include_progress_normal"/>
+        <include layout="@layout/include_progress_happy" />
+        <include layout="@layout/include_progress_super_happy" />
+        <ImageView
+            android:id="@+id/notes_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_note_black_24dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/note_button_margin_left"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Four days ago."/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/progress_day_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".142857">
+        <include layout="@layout/include_progress_sad" />
+        <include layout="@layout/include_progress_disappointed" />
+        <include layout="@layout/include_progress_normal"/>
+        <include layout="@layout/include_progress_happy" />
+        <include layout="@layout/include_progress_super_happy" />
+        <ImageView
+            android:id="@+id/notes_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_note_black_24dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/note_button_margin_left"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Three days ago."/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/progress_day_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".142857">
+        <include layout="@layout/include_progress_sad" />
+        <include layout="@layout/include_progress_disappointed" />
+        <include layout="@layout/include_progress_normal"/>
+        <include layout="@layout/include_progress_happy" />
+        <include layout="@layout/include_progress_super_happy" />
+        <ImageView
+            android:id="@+id/notes_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_note_black_24dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/note_button_margin_left"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Two days ago."/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/progress_day_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".142857">
+        <include layout="@layout/include_progress_sad" />
+        <include layout="@layout/include_progress_disappointed" />
+        <include layout="@layout/include_progress_normal"/>
+        <include layout="@layout/include_progress_happy" />
+        <include layout="@layout/include_progress_super_happy" />
+        <ImageView
+            android:id="@+id/notes_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_note_black_24dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/note_button_margin_left"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yesterday."/>
+    </FrameLayout>
+
+
+</LinearLayout>

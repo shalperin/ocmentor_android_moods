@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivityMoodChoice"
+    android:id="@+id/mood_container"
+    >
+        <FrameLayout
+            android:id="@+id/sad_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/sad_bg_color"
+            android:padding="40dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/smiley_sad"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/disappointed_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/disappointed_bg_color"
+            android:padding="40dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/smiley_dissapointed"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/normal_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/normal_bg_color"
+            android:padding="40dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/smiley_normal"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/happy_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/happy_bg_color"
+            android:padding="40dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/smiley_happy"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/super_happy_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/super_happy_bg_color"
+            android:padding="40dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/smiley_super_happy"/>
+        </FrameLayout>
+
+    </FrameLayout>
+    <ImageButton
+        android:id="@+id/button_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_history_black_24dp"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="24dp"/>
+    <ImageButton
+        android:id="@+id/button_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_note_black_24dp"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="24dp"/>
+</FrameLayout>

@@ -103,9 +103,13 @@ public class ActivityMoodChoice extends AppCompatActivity implements IFlingHandl
     }
 
     private void updateViews() {
+        ViewGroup container = (ViewGroup) findViewById(R.id.mood_container);
+        for (int i = 0; i< container.getChildCount(); i++) {
+            container.getChildAt(i).setVisibility(View.GONE);
+        }
         View activeMood = ((ViewGroup) findViewById(R.id.mood_container))
                 .getChildAt(model.getTodaysMood());
-        activeMood.bringToFront();
+        activeMood.setVisibility(View.VISIBLE);
     }
 
 

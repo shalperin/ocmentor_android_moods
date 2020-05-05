@@ -21,7 +21,7 @@
         <include layout="@layout/include_progress_super_happy" />
 
         <ImageView
-            android:id="@+id/notes_7"
+            android:id="@+id/button_notes_7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_note_black_24dp"
@@ -50,7 +50,7 @@
         <include layout="@layout/include_progress_super_happy" />
 
         <ImageView
-            android:id="@+id/notes_6"
+            android:id="@+id/button_notes_6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_note_black_24dp"
@@ -79,7 +79,7 @@
         <include layout="@layout/include_progress_super_happy" />
 
         <ImageView
-            android:id="@+id/notes_5"
+            android:id="@+id/button_notes_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_note_black_24dp"
@@ -107,7 +107,7 @@
         <include layout="@layout/include_progress_happy" />
         <include layout="@layout/include_progress_super_happy" />
         <ImageView
-            android:id="@+id/notes_4"
+            android:id="@+id/button_notes_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_note_black_24dp"
@@ -135,7 +135,7 @@
         <include layout="@layout/include_progress_happy" />
         <include layout="@layout/include_progress_super_happy" />
         <ImageView
-            android:id="@+id/notes_3"
+            android:id="@+id/button_notes_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_note_black_24dp"
@@ -163,7 +163,7 @@
         <include layout="@layout/include_progress_happy" />
         <include layout="@layout/include_progress_super_happy" />
         <ImageView
-            android:id="@+id/notes_2"
+            android:id="@+id/button_notes_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_note_black_24dp"
@@ -191,7 +191,7 @@
         <include layout="@layout/include_progress_happy" />
         <include layout="@layout/include_progress_super_happy" />
         <ImageView
-            android:id="@+id/notes_1"
+            android:id="@+id/button_notes_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_note_black_24dp"

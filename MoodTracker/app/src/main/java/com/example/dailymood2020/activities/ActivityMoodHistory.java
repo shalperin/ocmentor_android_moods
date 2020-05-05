@@ -1,5 +1,6 @@
 package com.example.dailymood2020.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,12 +21,13 @@ public class ActivityMoodHistory extends AppCompatActivity {
     private ViewGroup rootContainer;
     private View[] messageButtons;
     int label_idx = 6;
+    public static final String DEBUG_EXTRA_KEY = "debug";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mood_history);
-        if (Config.useMockModel) {
+        if (startedWithDebugIntent() || Config.useMockModel) {
             model = new MockModel(this);
         } else {
             model = new Model(this);
@@ -34,13 +36,13 @@ public class ActivityMoodHistory extends AppCompatActivity {
         rootContainer = (ViewGroup) findViewById(R.id.root_container);
 
         messageButtons = new View[] {
-                findViewById(R.id.notes_1),
-                findViewById(R.id.notes_2),
-                findViewById(R.id.notes_3),
-                findViewById(R.id.notes_4),
-                findViewById(R.id.notes_5),
-                findViewById(R.id.notes_6),
-                findViewById(R.id.notes_7)
+                findViewById(R.id.button_notes_1),
+                findViewById(R.id.button_notes_2),
+                findViewById(R.id.button_notes_3),
+                findViewById(R.id.button_notes_4),
+                findViewById(R.id.button_notes_5),
+                findViewById(R.id.button_notes_6),
+                findViewById(R.id.button_notes_7)
         };
 
         // Self defense, assert some things about our data.
@@ -103,5 +105,10 @@ public class ActivityMoodHistory extends AppCompatActivity {
             displayMood(day - today, mood);
             displayMessageButtons(day - today, message );
         }
+    }
+
+    boolean startedWithDebugIntent() {
+        Intent intent = getIntent();
+        return intent.getBooleanExtra(DEBUG_EXTRA_KEY, false);
     }
 }
